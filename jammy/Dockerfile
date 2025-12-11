@@ -34,4 +34,6 @@ RUN useradd --uid 1000 --home-dir /home/ubuntu --create-home ubuntu && \
     echo 'ubuntu ALL=(ALL:ALL) NOPASSWD:ALL' > /etc/sudoers.d/ubuntu && \
     chmod 440 /etc/sudoers.d/ubuntu
 
+WORKDIR /home/ubuntu
+
 USER ubuntu
