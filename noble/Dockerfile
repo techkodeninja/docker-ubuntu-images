@@ -29,7 +29,3 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN echo 'ubuntu ALL=(ALL:ALL) NOPASSWD:ALL' > /etc/sudoers.d/ubuntu && \
     chmod 440 /etc/sudoers.d/ubuntu
-
-WORKDIR /home/ubuntu
-
-USER ubuntu
